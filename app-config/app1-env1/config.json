@@ -1,0 +1,10 @@
+{
+  "cluster" : "https://127.0.0.1:62371",
+  "namespace" : "app1-env1",
+  "environment_name" : "dev",
+  "application_name" : "app1",
+  "harness_service" : "app1",
+  "harness_environment" : "dev",
+  "argo_project" : "app1",
+  "git_tag" : "1.0.0"
+}
