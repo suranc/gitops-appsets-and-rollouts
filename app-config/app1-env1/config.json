@@ -1,5 +1,5 @@
 {
-  "cluster" : "https://127.0.0.1:62371",
+  "cluster" : "target",
   "namespace" : "app1-env1",
   "environment_name" : "dev",
   "application_name" : "app1",
