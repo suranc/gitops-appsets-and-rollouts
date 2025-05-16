@@ -1,5 +1,5 @@
 {
-  "cluster" : "target",
+  "cluster" : "https://kind-target-control-plane:6443",
   "namespace" : "app1-env1",
   "environment_name" : "dev",
   "application_name" : "app1",
