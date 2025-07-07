@@ -2,11 +2,10 @@
   "cluster" : "https://target-control-plane:6443",
   "harness_service" : "app1",
   "application_name" : "app1",
-  "git_tag" : "1.06",
   "namespace" : "app1-env1",
   "harness_environment" : "dev",
   "argo_project" : "app1",
   "environment_name" : "dev",
-  "git_tag" : "1.0.1",
+  "git_tag" : "2.0.0",
   "image_tag" : "green"
 }
