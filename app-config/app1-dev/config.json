@@ -6,6 +6,6 @@
   "harness_environment" : "dev",
   "argo_project" : "app1",
   "environment_name" : "dev",
-  "git_tag" : "2.0.0",
+  "git_tag" : "3.0.0",
   "image_tag" : "green"
 }
