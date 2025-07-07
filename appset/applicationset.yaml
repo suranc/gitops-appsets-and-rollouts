@@ -24,7 +24,7 @@ spec:
         path: '{{application_name}}-{{environment_name}}'
         kustomize:
           images:
-          - "argoproj/rollouts-demo=argoproj/rollouts-demo:green:{{image_tag}}"
+          - "argoproj/rollouts-demo=argoproj/rollouts-demo:{{image_tag}}"
       destination:
         server: '{{cluster}}'
         namespace: '{{namespace}}'
