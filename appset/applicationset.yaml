@@ -22,9 +22,12 @@ spec:
         repoURL: https://github.com/suranc/gitops-appsets-and-rollouts-app-manifests.git
         targetRevision: '{{git_tag}}'
         path: '{{application_name}}-{{environment_name}}'
-        kustomize:
-          images:
-          - "argoproj/rollouts-demo=argoproj/rollouts-demo:{{image_tag}}"
+        helm:
+          parameters:
+          - name: imageTag
+            value: "{{image_tag}}"
+          valueFiles:
+          - values.yaml
       destination:
         server: '{{cluster}}'
         namespace: '{{namespace}}'
