@@ -18,16 +18,19 @@ spec:
         #harness.io/buildRef: '{{image_tag}}'
     spec:
       project: '{{argo_project}}'
-      source:
-        repoURL: https://github.com/suranc/gitops-appsets-and-rollouts-app-manifests.git
-        targetRevision: '{{git_tag}}'
-        path: '{{application_name}}-{{environment_name}}'
-        helm:
-          parameters:
-          - name: imageTag
-            value: "{{image_tag}}"
-          valueFiles:
-          - values.yaml
+      sources:
+        - repoURL: https://github.com/suranc/gitops-appsets-and-rollouts-app-manifests.git
+          targetRevision: '{{git_tag}}'
+          path: '{{application_name}}-{{environment_name}}/helm'
+          helm:
+            parameters:
+            - name: imageTag
+              value: "{{image_tag}}"
+            valueFiles:
+            - values.yaml
+        - repoURL: https://github.com/suranc/gitops-appsets-and-rollouts-app-manifests.git
+          targetRevision: '{{git_tag}}'
+          path: '{{application_name}}-{{environment_name}}/manifests'
       destination:
         server: '{{cluster}}'
         namespace: '{{namespace}}'
