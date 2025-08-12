@@ -2,7 +2,7 @@
   "cluster" : "https://target-control-plane:6443",
   "harness_service" : "app1",
   "application_name" : "app1",
-  "git_tag" : "4.0.1",
+  "git_tag" : "6.0.0",
   "namespace" : "app1-env1",
   "harness_environment" : "dev",
   "image_tag" : "green",
