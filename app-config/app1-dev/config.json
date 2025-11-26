@@ -1,10 +1,10 @@
 {
   "cluster" : "https://kubernetes.default.svc",
-  "harness_service" : "app1",
+  "harness_service" : "springforwardgitops",
   "application_name" : "app1",
   "git_tag" : "0.0.2",
   "namespace" : "suran-app1-dev",
-  "harness_environment" : "dev",
+  "harness_environment" : "Dev",
   "image_tag" : "blue",
   "argo_project" : "app1",
   "environment_name" : "dev"
