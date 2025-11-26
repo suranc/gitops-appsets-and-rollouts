@@ -1,9 +1,9 @@
 {
-  "cluster" : "https://target-control-plane:6443",
+  "cluster" : "https://kubernetes.default.svc",
   "harness_service" : "app1",
   "application_name" : "app1",
   "git_tag" : "0.0.2",
-  "namespace" : "app1-env1",
+  "namespace" : "suran-app1-dev",
   "harness_environment" : "dev",
   "image_tag" : "blue",
   "argo_project" : "app1",
