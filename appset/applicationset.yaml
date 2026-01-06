@@ -16,6 +16,7 @@ spec:
         harness.io/envRef: '{{harness_environment}}'
         harness.io/serviceRef: '{{harness_service}}'
         #harness.io/buildRef: '{{image_tag}}'
+        test: 'test'
     spec:
       project: '{{argo_project}}'
       sources:
