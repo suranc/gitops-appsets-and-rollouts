@@ -2,9 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: gitops-appsets-and-rollouts-app1
-  labels:
-    harness.io/serviceRef: 'springforwardgitops'
-    test: 'test'
 spec:
   generators:
   - git:
