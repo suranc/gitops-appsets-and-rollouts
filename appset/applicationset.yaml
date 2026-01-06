@@ -2,6 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: gitops-appsets-and-rollouts-app1
+  labels:
+    harness.io/serviceRef: 'springforwardgitops'
+    test: 'test'
 spec:
   generators:
   - git:
@@ -16,7 +19,7 @@ spec:
         harness.io/envRef: '{{harness_environment}}'
         harness.io/serviceRef: '{{harness_service}}'
         #harness.io/buildRef: '{{image_tag}}'
-        test: 'test2'
+        test: 'test'
     spec:
       project: '{{argo_project}}'
       sources:
