@@ -6,7 +6,7 @@
   "namespace" : "suran-app1-dev",
   "harness_environment" : "Dev",
   "releasePath" : "app1-dev",
-  "image_tag" : "blue",
+  "image_tag" : "green",
   "argo_project" : "app1",
   "environment_name" : "dev"
 }
