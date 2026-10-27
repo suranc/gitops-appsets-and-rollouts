@@ -8,5 +8,6 @@
   "releasePath" : "app1-dev",
   "image_tag" : "green",
   "argo_project" : "app1",
+  "KEY" : "false",
   "environment_name" : "dev"
 }
